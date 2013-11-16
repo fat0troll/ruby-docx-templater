@@ -6,5 +6,5 @@ module DocxTemplater
   end
 end
 
-require 'docx_templater/template_processor'
-require 'docx_templater/docx_creator'
+require_relative 'docx_templater/template_processor'
+require_relative 'docx_templater/docx_creator'
