@@ -1,4 +1,3 @@
-# encoding: UTF-8
 require 'nokogiri'
 
 module DocxTemplater
@@ -12,6 +11,7 @@ module DocxTemplater
     end
 
     def render(document)
+      document.force_encoding('utf-8')
       data.each do |key, value|
         if value.class == Array
           document = enter_multiple_values(document, key)
